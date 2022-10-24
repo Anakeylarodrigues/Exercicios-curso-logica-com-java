@@ -1,6 +1,6 @@
-package VARIAVEIS_CONSTANTES;
-
 /*Leia um número no console e depois faça o cálculo do quadrado desse número e exiba o resultado no console.*/
+
+package VARIAVEIS_CONSTANTES;
 
 import java.util.Scanner;
 

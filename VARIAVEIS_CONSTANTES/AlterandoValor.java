@@ -26,7 +26,7 @@ public class AlterandoValor {
 
         Double total = valorProd + acrescimo;
 
-        System.out.println("Valor totoal: " + total);
+        System.out.println("Valor total: " + total);
 
         scanner.close();
     }

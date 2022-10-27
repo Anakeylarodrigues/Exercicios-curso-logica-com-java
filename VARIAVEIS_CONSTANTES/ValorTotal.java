@@ -1,5 +1,3 @@
-/*Encontre o valor total baseado na quantidade e no desconto */
-
 package VARIAVEIS_CONSTANTES;
 
 import java.util.Scanner;

@@ -1,11 +1,12 @@
 package OPERADORES;
 
-/*Crie um programa que receba a idade de uma pessoa e a quantidade de tempo que essa 
-pessoa contribuiu com a previdência, depois verifique se ela pode aposentar ou não */
-
 import java.util.Scanner;
 
-public class VerificarAposentadoria {
+public class VerificarAposentadoria2 {
+
+    static final Integer IDADE_MINIMA_APOSENTADORIA = 55;
+
+    static final Integer TEMPO_MINIMO_CONTRIBUICAO = 25;
     
     public static void main(String[] args) {
         
@@ -17,7 +18,13 @@ public class VerificarAposentadoria {
         System.out.print("Digite seu tempo de contribuição em anos: ");
         Integer tempoContribuicao = scanner.nextInt();
 
-        if (idade >= 55 && tempoContribuicao >= 25) {
+        Boolean idadeParaAposentar = idade >= IDADE_MINIMA_APOSENTADORIA;
+
+        Boolean tempoContribuicaoSuficiente = tempoContribuicao >= TEMPO_MINIMO_CONTRIBUICAO;
+
+        Boolean podeAposentar = idadeParaAposentar && tempoContribuicaoSuficiente;
+
+        if(podeAposentar) {
             System.out.println("Você pode se aposentar!");
         } else {
             System.out.println("Você ainda não pode se aposentar!");

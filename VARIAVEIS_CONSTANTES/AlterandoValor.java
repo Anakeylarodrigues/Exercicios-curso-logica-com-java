@@ -1,3 +1,6 @@
+/*Crie um programa que vai receber do usuário o valor do produto e a quantidade do produto que se deseja. 
+Com essas informações encontre o subtotal e aplique o desconto*/
+
 package VARIAVEIS_CONSTANTES;
 
 import java.util.Scanner;
